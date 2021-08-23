@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/Checkings/test2.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/GamerListsAPI/implementations/DB_Imp/DeleteInfoDB.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/GamerListsAPI/implementations/DB_Imp/InsertInfoDB.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/GamerListsAPI/implementations/DB_Imp/ReadInfoDB.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/example/GamerListsAPI/manager/GamerDBGetter.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/GamerData.sql" dialect="TSQL" />
+  </component>
+</project>

@@ -1,0 +1,56 @@
+[
+  {
+    "emailAddress": "asb@skj.sad",
+    "gender": "male",
+    "gamerFName": "osama",
+    "gameInfo": [
+      {
+        "gameId": 10,
+        "specs": {
+          "graphicsCard": "titan x",
+          "processor": "i13",
+          "ram": "32gb"
+        },
+        "gameName": "r6s",
+        "publisher": "ubi",
+        "launchDate": "2012",
+        "version": "2.2"
+      },
+      {
+        "gameId": 20,
+        "specs": {
+          "graphicsCard": "quodro",
+          "processor": "xenon",
+          "ram": "4gb"
+        },
+        "gameName": "r6sds",
+        "publisher": "ubioosaio",
+        "launchDate": "201231",
+        "version": "2.82"
+      }
+    ],
+    "gamerLName": "jamil",
+    "gamerId": 1
+  },
+  {
+    "emailAddress": "asb21@saskj.sad",
+    "gender": "male",
+    "gamerFName": "taha",
+    "gameInfo": [
+      {
+        "gameId": 20,
+        "specs": {
+          "graphicsCard": "quodro",
+          "processor": "xenon",
+          "ram": "4gb"
+        },
+        "gameName": "r6sds",
+        "publisher": "ubioosaio",
+        "launchDate": "201231",
+        "version": "2.82"
+      }
+    ],
+    "gamerLName": "ahmed",
+    "gamerId": 2
+  }
+]

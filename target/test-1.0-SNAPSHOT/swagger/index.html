@@ -1,0 +1,78 @@
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Portal</title>
+    <link rel="stylesheet" type="text/css" href="./swagger-ui.css">
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16"/>
+    <link rel="stylesheet" href="./theme-outline.css"/>
+    <style>
+        html {
+            box-sizing: border-box;
+            overflow: -moz-scrollbars-vertical;
+            overflow-y: scroll;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            background: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+<div id="swagger-ui"></div>
+
+<script src="./swagger-ui-bundle.js"></script>
+<script src="./swagger-ui-standalone-preset.js"></script>
+<script>
+    function getURL() {
+        return window.location.href;
+    }
+
+
+    window.onload = function () {
+        var url = getURL();
+
+        var urlArry = url.split("/");
+
+        var http = urlArry[0];
+        var hostandPort = urlArry[2];
+        var appName = urlArry[3];
+
+
+        var swaggerURL = http + "//" + hostandPort + "/" + appName + "/swagger.json";
+
+        alert("swaggerURL  === "+swaggerURL);
+
+        const ui = SwaggerUIBundle({
+            url: swaggerURL,
+            dom_id: '#swagger-ui',
+            deepLinking: true,
+
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+            ],
+            plugins: [
+                SwaggerUIBundle.plugins.DownloadUrl
+            ],
+            layout: "StandaloneLayout"
+        })
+
+        window.ui = ui
+
+
+    }
+</script>
+</body>
+</html>
